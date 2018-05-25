@@ -9,3 +9,4 @@ c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Cus
 c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.frmAddCustomerContacts.resources
 c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.frmViewCustomers.resources
 c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.frmViewContactDetails.resources
+C:\Users\User\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer Contact Manager.csprojResolveAssemblyReference.cache

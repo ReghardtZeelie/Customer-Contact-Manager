@@ -78,9 +78,16 @@ namespace Customer_Contact_Manager
             DataSet DS = new DataSet();
             if (ValidateSave())
             {
-                DS = Logic.ICustomer(TxtName.Text.Trim(),
-                                   Convert.ToDecimal(txtLong.Text.Trim()),
-                                   Convert.ToDecimal(txtLat.Text.Trim()));
+                try
+                {
+                    DS = Logic.ICustomer(TxtName.Text.Trim(),
+                                       Convert.ToDecimal(txtLong.Text.Trim()),
+                                       Convert.ToDecimal(txtLat.Text.Trim()));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Please contact your system administrator an error has occurred.", "Sytem Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
 
                 if (DS.Tables.Count > 0)
                 {

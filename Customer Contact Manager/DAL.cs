@@ -123,6 +123,49 @@ namespace Customer_Contact_Manager
             connection.Dispose();
             return DS;
         }
+
+        public void UCustomerDetails(string Name,
+            decimal Long,
+            decimal Lat,
+            int cID)
+        {
+            DataSet DS = new DataSet();
+            SqlConnection connection = new SqlConnection(strConn);
+            SqlCommand cmd = connection.CreateCommand();
+            connection.Open();
+            cmd.Parameters.AddWithValue("@Name", Name);
+            cmd.Parameters.AddWithValue("@Lat", Lat);
+            cmd.Parameters.AddWithValue("@Long", Long);
+            cmd.Parameters.AddWithValue("@CID", cID);
+            cmd.CommandText = "UCustomerDetails";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            connection.Dispose();
+            
+        }
+
+
+        public void UCustomerContactDetails(int ContactID,
+            string ContactName,
+            string Email,
+            string ContactDetail)
+        {
+           
+            SqlConnection connection = new SqlConnection(strConn);
+            SqlCommand cmd = connection.CreateCommand();
+            connection.Open();
+            cmd.Parameters.AddWithValue("@ContactID", ContactID);
+            cmd.Parameters.AddWithValue("@ContactName", ContactName);
+            cmd.Parameters.AddWithValue("@ContactEmail", Email);
+            cmd.Parameters.AddWithValue("@ContactDetail", ContactDetail);
+            cmd.CommandText = "UCustomerContactDetails";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            connection.Dispose();
+            
+        }
         #endregion
 
     }

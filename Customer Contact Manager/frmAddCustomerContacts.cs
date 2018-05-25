@@ -121,10 +121,17 @@ namespace Customer_Contact_Manager
             if (validateSave())
             {
                 DataSet DS = new DataSet();
-               DS =  Logic.ICustomerContact(Convert.ToInt32(cboCustomer.SelectedValue.ToString()),
-                                       txtName.Text.Trim(),
-                                       txtemail.Text.Trim(),
-                                       txtContact.Text.Trim());
+                try
+                {
+                    DS = Logic.ICustomerContact(Convert.ToInt32(cboCustomer.SelectedValue.ToString()),
+                                            txtName.Text.Trim(),
+                                            txtemail.Text.Trim(),
+                                            txtContact.Text.Trim());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Please contact your system administrator an error has occurred.", "Sytem Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
 
                 if (DS.Tables.Count > 0)
                 {

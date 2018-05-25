@@ -54,6 +54,22 @@ namespace Customer_Contact_Manager
             DS = DataClass.QCustomerContacts(CustomerID);
             return DS;
         }
+        public void UCustomerDetails(string Name,
+           decimal Long,
+           decimal Lat,
+            int cID)
+        {          
+             DataClass.UCustomerDetails(Name, Long, Lat,cID);            
+        }
+        public void UCustomerContactDetails(int ContactID,
+          string ContactName,
+          string Email,
+          string ContactDetail)
+        {
+
+            DataClass.UCustomerContactDetails(ContactID, ContactName, Email, ContactDetail);
+
+        }
         #endregion
     }
 }
