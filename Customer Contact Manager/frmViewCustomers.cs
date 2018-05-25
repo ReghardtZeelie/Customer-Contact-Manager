@@ -77,11 +77,17 @@ namespace Customer_Contact_Manager
                  Lar = Convert.ToDecimal(dgv.Rows[e.RowIndex].Cells[1].Value.ToString());
                  Long = Convert.ToDecimal(dgv.Rows[e.RowIndex].Cells[2].Value.ToString());
                  cID = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells[4].Value.ToString());
-
+                 try
+                 {
                  Logic.UCustomerDetails(Name,
                                         Long,
                                         Lar,
                                         cID);
+                 }
+                catch (Exception  ex)
+                {
+                    MessageBox.Show("Please contact your system administrator an error has occurred.", "Sytem Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
 
             }
             if (e.ColumnIndex == 1 && e.RowIndex > -1)
@@ -96,11 +102,17 @@ namespace Customer_Contact_Manager
                 Name = dgv.Rows[e.RowIndex].Cells[0].Value.ToString();
                 Long = Convert.ToDecimal(dgv.Rows[e.RowIndex].Cells[2].Value.ToString());
                 cID = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells[4].Value.ToString());
-
+                 try
+                {
                 Logic.UCustomerDetails(Name,
                                        Long,
                                        Lat,
                                        cID);
+                }
+                 catch (Exception ex)
+                 {
+                     MessageBox.Show("Please contact your system administrator an error has occurred.", "Sytem Message", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                 }
 
             }
             if (e.ColumnIndex == 2 && e.RowIndex > -1)
