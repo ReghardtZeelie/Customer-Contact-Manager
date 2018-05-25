@@ -1,0 +1,11 @@
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\bin\Debug\Customer Contact Manager.exe
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\bin\Debug\Customer Contact Manager.pdb
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.frmMain.resources
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.Properties.Resources.resources
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer Contact Manager.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer Contact Manager.exe
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer Contact Manager.pdb
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.frmAddCustomer.resources
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.frmAddCustomerContacts.resources
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.frmViewCustomers.resources
+c:\users\user\documents\visual studio 2010\Projects\Customer Contact Manager\Customer Contact Manager\obj\x86\Debug\Customer_Contact_Manager.frmViewContactDetails.resources
